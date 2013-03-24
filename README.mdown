@@ -1,10 +1,8 @@
-![sticker](http://lmgtfy.com/images/sticker.png)
-
 # lmgtfy
 An [Alfred](http://alfredapp.com) extension that creates a link for [lmgtfy.com](http://lmgtfy.com).
 
 ### Dependencies
-* [Alfred](http://alfredapp.com)
+* [Alfred v2](http://alfredapp.com)
 * [Alfred Powerpack](http://www.alfredapp.com/powerpack)
 
 ### Usage
@@ -28,4 +26,4 @@ The link is copied to your clipboard for easy pasting.
 
 ### Special Thanks
 
-Special thanks to the guys at lmgtfy.com for allowing the image of their sticker and giving the all clear to share this with the world. Seriously, [buy a sticker](http://lmgtfy.com/stickers.html) already.
+goes to Angelo Brock https://github.com/brockangelo - he wrotes the initial lmgtfy as alfred v1 extension.

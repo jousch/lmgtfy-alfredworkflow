@@ -22,7 +22,7 @@ The link is copied to your clipboard for easy pasting.
 
 ### Installation
 
-[![Install](http://media.alfredapp.com/scripts/downloadextension.png)](https://github.com/jousch/lmgtfy-alfredworkflow/raw/master/lmgtfy.alfredworkflow?raw=true)
+[![Install](https://raw.github.com/jousch/lmgtfy-alfredworkflow/master/Source/workflowicon.png)](https://github.com/jousch/lmgtfy-alfredworkflow/raw/master/lmgtfy.alfredworkflow?raw=true)
 
 ### Special Thanks
 

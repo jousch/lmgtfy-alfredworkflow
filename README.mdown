@@ -1,5 +1,5 @@
 # lmgtfy - let me google that for you
-An [Alfred](http://alfredapp.com) extension that creates a link for [lmgtfy.com](http://lmgtfy.com).
+An [Alfred](http://alfredapp.com) workflow that creates a link for [lmgtfy.com](http://lmgtfy.com).
 
 ### Dependencies
 * [Alfred v2](http://alfredapp.com)

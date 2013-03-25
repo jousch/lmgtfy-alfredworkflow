@@ -42,6 +42,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>lmgtfy</string>
+				<key>subtext</key>
+				<string>lmgtfy "the search to run"</string>
+				<key>text</key>
+				<string>Let me google that for you</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -65,31 +84,22 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>lmgtfy</string>
-				<key>subtext</key>
-				<string>lmgtfy "the search to run"</string>
-				<key>text</key>
-				<string>Let me google that for you</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>script</key>
-				<string>QUERY=$(perl -MURI::Escape -e 'print uri_escape("{query}");' "$2")
+				<string># CONFIGURATION
+flag=$LANG
+
+# DO THE MAGIC
+QUERY=$(perl -MURI::Escape -e 'print uri_escape("{query}");' "$2")
 echo "http://lmgtfy.com/?q=$QUERY" | pbcopy
-echo "Link copied to clipboard! Go share it!"
+
+# NOTIFICATION
+if [[ $flag == de* ]]; then
+	echo "Link wurde in die Zwischenablage kopiert!"
+else
+	echo "Link copied to clipboard! Go share it!"
+fi
 </string>
 				<key>type</key>
 				<integer>0</integer>
@@ -103,7 +113,13 @@ echo "Link copied to clipboard! Go share it!"
 	<key>readme</key>
 	<string>Alfred v2 workflow version of https://github.com/brockangelo/lmgtfy for use with Alfred v2 and powerpack.
 
-Special Thanks goes to Angelo Brock https://github.com/brockangelo - he wrotes the initial lmgtfy as alfred v1 extension.</string>
+Special Thanks goes to Angelo Brock https://github.com/brockangelo - he wrotes the initial lmgtfy as alfred v1 extension.
+
+Please drop an issue for question/bugreporting/... at https://github.com/jousch/lmgtfy-alfredworkflow
+
+
+Cheers
+Jousch</string>
 	<key>uidata</key>
 	<dict>
 		<key>2217BF02-AD31-42CB-8173-4E7024A21C94</key>

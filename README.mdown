@@ -10,14 +10,14 @@ An [Alfred](http://alfredapp.com) workflow that creates a link for [lmgtfy.com](
 Usage follows the following format:
 
 
-![Usage](http://approductive.files.wordpress.com/2012/05/lmgtfy_alfred.png)
+![Usage](Assets/screenshot.png)
 
 * Select a keyword (it is **lmgtfy** by default)
 * Specify the search you want to create
 
 The link is copied to your clipboard for easy pasting.
 
-![lmgtfy](http://approductive.files.wordpress.com/2012/05/lmgtfy_output.png)
+![lmgtfy](Assets/growl_notify.png)
 
 
 ### Installation
